@@ -1,0 +1,13 @@
+body, h1, h2, h3, p {
+    font-family: 'Righteous', sans-serif;
+}
+
+img {
+    width: 40%;
+}
+.portrait {
+    width: 40%;
+}
+.flag {
+    width: 15%;
+}

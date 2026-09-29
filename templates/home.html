@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h2>Listing</h2>
+<div class="three-column">
+    {% for admiral in results %}
+
+    
+    <a href="{{ url_for('admiral', id=admiral[0]) }}">
+        <div class="w3-card-4">
+            <h3>{{ admiral[1] }} {{ admiral[2] }}
+            <img src="{{ url_for('static', filename='images/' + admiral[3]) }}" alt="{{ admiral[1] }}" width="200">
+        </div>
+    </a>
+    
+
+    {% endfor %}
+</div>
+
+{% endblock %}
+
+
+</h3>
